@@ -17,6 +17,6 @@ export class Assignment3Component implements OnInit {
 
   detailsButtonClicked() {
     this.displayDetails = !this.displayDetails;
-    this.clickLog.push(Date.now());
+    this.clickLog.push(new Date());
   }
 }

@@ -4,7 +4,7 @@
   [innerText]="displayDetails? 'Hide Details' : 'Display Details'"></button>
 <p *ngIf="displayDetails">Here are some random details</p>
 <ul>
-  <li *ngFor="let logItem of clickLog"
-  [ngStyle]="{backgroundColor: clickLog.indexOf(logItem) > 4 ? 'blue': 'none'}"
-  [ngClass]="{'white-color': clickLog.indexOf(logItem) > 4}">{{ logItem }}</li>
+  <li *ngFor="let logItem of clickLog; let i = index"
+  [ngStyle]="{backgroundColor: i > 4 ? 'blue': 'transparent'}"
+  [ngClass]="{'white-color': i > 4}">{{ logItem }}</li>
 </ul>
