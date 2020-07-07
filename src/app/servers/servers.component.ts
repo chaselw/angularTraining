@@ -22,4 +22,8 @@ export class ServersComponent {
   onUpdateServerName(event: any) {
     this.serverName = event.target.value;
   }
+
+  onUpdateServerName(event) {
+    this.serverName = event.target.value;
+  }
 }
