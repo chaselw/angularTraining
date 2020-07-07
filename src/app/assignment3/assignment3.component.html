@@ -1,0 +1,10 @@
+<button
+  (click)="detailsButtonClicked()"
+  class="btn btn-primary"
+  [innerText]="displayDetails? 'Hide Details' : 'Display Details'"></button>
+<p *ngIf="displayDetails">Here are some random details</p>
+<ul>
+  <li *ngFor="let logItem of clickLog"
+  [ngStyle]="{backgroundColor: clickLog.indexOf(logItem) > 4 ? 'blue': 'none'}"
+  [ngClass]="{'white-color': clickLog.indexOf(logItem) > 4}">{{ logItem }}</li>
+</ul>

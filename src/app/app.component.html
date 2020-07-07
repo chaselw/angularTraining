@@ -5,16 +5,7 @@
       <app-success-alert></app-success-alert>
       <app-warning-alert></app-warning-alert>
       <app-servers></app-servers>
-      <br>
-      <label>Username</label>
-      <input
-        type="text"
-        class="form-control"
-        [(ngModel)]="username">
-      <p>Your current username is: {{ username }}</p>
-      <button class="btn btn-primary"
-              [disabled]="username === ''"
-              (click)="resetUserName()">Reset Username</button>
+      <app-assignments></app-assignments>
     </div>
   </div>
 </div>
